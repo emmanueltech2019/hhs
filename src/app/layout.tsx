@@ -5,6 +5,7 @@ import NavBar from "./components/Nav/NavBar";
 import Footer from "./components/Footer/Footer";
 import data from "./data";
 import Script from "next/script";
+import Bar from "./components/bar/Bar";
 
 const TawkTo = () => {
   return (
@@ -41,23 +42,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="YT_n8rKk5rWj2dvNldcGiCDnw2H86v1LeiFYZKUi5ao" />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-816DEC9CHG"></script>
+      <meta name="google-site-verification" content="qtF6bh1d2Fs5IN5P9-UIymEDB64u8AuQyVBbWI6dNB8" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYFS8C7VC0"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-816DEC9CHG');
+              gtag('config', 'G-WYFS8C7VC0');
             `,
           }}
         />
-            </head>
+      </head>
       <body className={inter.className}>
         <NavBar/>
         {children}
         <TawkTo/>
+        <Bar/>
         <Footer/>
       </body>
     </html>
